@@ -1,0 +1,211 @@
+﻿@model dynamic
+@{
+    ViewData["Title"] = "Home Page";
+    var newArrivals = ViewData["NewArrivals"] as List<WebApplication1.Models.Product>;
+    var bestSellers = ViewData["BestSellers"] as List<WebApplication1.Models.Product>;
+}
+
+<!-- Hero Section -->
+<div class="hero">
+	
+    <h1>Discover Your Inner Beauty</h1>
+    <p>Great gift for yourself and loved ones</p>
+    <button class="btn btn-pink">Shop Now</button>
+	
+</div>
+
+<!-- New Arrivals -->
+<div class="container">
+
+        @foreach (var product in newArrivals)
+        {
+            <div class="container">
+                <h2 class="section-title">New Arrivals</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card p-2">
+						<img src="~/images/cuxziz1odnbfnvxwskehfyojmujq9pv1kfgzlkvh.webp" />
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Eva Silk</h5>
+                                <p class="card-text">$25.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Add to Bag</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2">
+						<img src="~/images/fndg9qafn5uamopuktqbu8dopxm9fxdp2irrcjyc.webp" />
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Eva Shine</h5>
+                                <p class="card-text">$30.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Add to Bag</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2">
+						<img src="~/images/cuxziz1odnbfnvxwskehfyojmujq9pv1kfgzlkvh.webp" />
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Eva Repair</h5>
+                                <p class="card-text">$30.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Add to Bag</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2">
+						<img src="~/images/esaoh9i1as1kpfdzpas3hz77bmrp4h4cpciksluw.webp" />
+                            <div class="card-body text-center">
+                            <h5 class="card-title">Eva Noir</h5>
+                                <p class="card-text">$30.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Add to Bag</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+        @foreach (var product in newArrivals)
+        {
+            <div class="container">
+                <h2 class="section-title">Best Sellers</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card p-2">
+							<img src="~/images/ejcl9ermftbzxldjmsy2z5kejztqp60lktxb9lng (1).webp" />
+                            <div class="card-body text-center">
+                        <h5 class="card-title">Eva Scent</h5>
+                                <p class="card-text">$25.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Add to Bag</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2">
+							<img src="~/images/fndg9qafn5uamopuktqbu8dopxm9fxdp2irrcjyc.webp" />
+                            <div class="card-body text-center">
+                        <h5 class="card-title">Eva Mystique</h5>
+                                <p class="card-text">$30.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Add to Bag</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2">
+							<img src="~/images/hi8vt2rjk4004pelpsjdvx4ytdmddjhmx7e10lqb (1).webp" />
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Eva Shampoo</h5>
+                                <p class="card-text">$30.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Add to Bag</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card p-2">
+							<img src="~/images/ejcl9ermftbzxldjmsy2z5kejztqp60lktxb9lng (1).webp" />
+                            <div class="card-body text-center">
+                                <h5 class="card-title">conciler</h5>
+                                <p class="card-text">$30.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Add to Bag</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---->
+            <div class="container mt-5">
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="card border-0" style="background-color: #f9c5d1;">
+                            <div class="row no-gutters">
+                                <div class="col-md-6">
+									<img src="~/images/fndg9qafn5uamopuktqbu8dopxm9fxdp2irrcjyc.webp" />
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Blossom Glow Kit</h5>
+                                        <p class="card-text">Reveal your skin's natural glow with our Lotus Glow Kit. Nourishing body and face creams with lotus extract provide deep hydration and rejuvenation.</p>
+                                        <button class="btn btn-pink">Shop Now</button>
+                                        <button class="btn btn-black btn-link">Explore More →</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="card border-0" style="background-color: #f9c5d1;">
+                            <div class="row no-gutters">
+                                <div class="col-md-6 order-md-2">
+							<img src="~/images/pexels-photo-6724485.webp" />
+                                </div>
+                                <div class="col-md-6 order-md-1">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title">Floral Essence Masks Sets</h5>
+                                        <p class="card-text">Indulge in the beauty of nature with our Floral Essence Masks set. Each mask features a unique blend of flower extracts to hydrate and nourish your skin.</p>
+                                        <button class="btn btn-pink">Shop Now</button>
+                                        <button class="btn btn-black btn-link">Explore More →</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--On the Blog-->
+
+            <div class="container">
+                <h2 class="section-title">On the Blog</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card p-3">
+					<img src="~/images/doyop3dmbf8agq92ykxnekbaiwzd2rxxssplgk9a.webp" />
+                            <div class="card-body text-center">
+                        <h5 class="card-title">Eva Pure</h5>
+                                <p class="card-text">$25.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Read More</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3">
+					<img src="~/images/hi8vt2rjk4004pelpsjdvx4ytdmddjhmx7e10lqb (1).webp" />
+                            <div class="card-body text-center">
+                        <h5 class="card-title">Eva Soft</h5>
+                                <p class="card-text">$30.00</p>
+                                <button type="button" class="btn btn-dark">Read More</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3">
+					   <img src="~/images/cuxziz1odnbfnvxwskehfyojmujq9pv1kfgzlkvh.webp" />
+                            <div class="card-body text-center">
+                        <h5 class="card-title">Eva Calm</h5>
+                                <p class="card-text">$30.00</p>
+                                <button class="btn btn-transparent" onclick="changeColor(this)"><i class="bi bi-bag"></i> Read More</button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                }
+            </div>
+        }

@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stely.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bott.js">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+
+        .categories-bar {
+                    background: pink;
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+        }
+                    .categories-bar {
+                    background: #f3a7b3;
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: center;
+                    gap: 10px;
+                }
+                .category {
+                    background: white;
+                    color: #383838;
+                    border-radius: 20px;
+                    padding: 5px 15px;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                }
+                .category.active {
+                    background:#F5A3B7;
+                    color: white;
+                }
+                .post-container {
+                    background: white;
+                    border-radius: 10px;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .post-container img {
+                    width: 50%;
+                    border-radius: 10px;
+                }
+                .post-container .content {
+                    width: 50%;
+                    padding: 0 20px;
+                }
+                .post-container h2 {
+                    color: #b35a74;
+                    font-size: 1.5rem;
+                    margin-top: 10px;
+                }
+                .post-container p {
+                    color: #555;
+                }
+                .read-more {
+                    background-color: #F5A3B7;
+                    color: white;
+                    border: none;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+                .read-more:hover {
+                    background-color: #F5A3B7;
+                }
+    </style>
+</head>
+<body>
+
+
+    <div class="categories-bar">
+        <button class="category active">All Category</button>
+        <button class="category">Ecofriendly</button>
+        <button class="category">Organic</button>
+        <button class="category">Tips</button>
+        <button class="category">Compilation</button>
+        <button class="category">Ingredients</button>
+        <button class="category">Antiaging</button>
+        <button class="category">Combination</button>
+    </div>
+    <main class="container mt-4">
+        <div class="post-container">
+			<img src="~/images/neauthy-skincare-8jg7vumdulu-unsplash.jpg" />
+            <div class="content">
+                <h2>Cracking the Coconut Code</h2>
+                <p>Few ingredients have been debated as much in recent years as coconut oil. Is it a trick or a treasure?</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+        <div class="post-container flex-row-reverse">
+			<img src="~/images/vya-naturals-m3l24oeny2c-unsplash.jpg" />
+            <div class="content">
+                <h2>Bloom Beauty Best of 2023</h2>
+                <p>Can you believe we're here? Another year is wrapping up and we're feeling celebratory...</p>
+                <button class="read-more">Read More</button>
+            </div>
+		</div>
+        <div class="post-container">
+			<img src="~/images/hi8vt2rjk4004pelpsjdvx4ytdmddjhmx7e10lqb.webp" />
+            <div class="content">
+                <h2>Cracking the Coconut Code</h2>
+                <p>Few ingredients have been debated as much in recent years as coconut oil. Is it a trick or a treasure?</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+        <div class="post-container flex-row-reverse">
+            <img src="~/images/cxiocmjtstll8c6dtb2rsm6fbavyfxoar46srkep.webp" />
+            <div class="content">
+                <h2>Bloom Beauty Best of 2023</h2>
+                <p>Can you believe we're here? Another year is wrapping up and we're feeling celebratory...</p>
+                <button class="read-more">Read More</button>
+            </div>
+        </div>
+    </main>
+    <!--footer-->
+    <footer style="background-color: #222; color: #fff; padding: 60px 0; font-family: Arial, sans-serif;">
+        <div style="width: 85%; margin: auto; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: flex-start; gap: 40px;">
+            <div style="flex: 1; min-width: 280px;">
+                <h3 style="color: #ff69b4; margin-bottom: 15px; font-size: 20px;">Eva cosmetics</h3>
+                <p style="line-height: 1.8; font-size: 14px;">Discover beauty products with our natural organic beauty line.</p>
+                <p style="line-height: 2; font-size: 14px;">
+                    📞 +380 123 45 67<br>
+                    ✉ Eva@gmail.com<br>
+                    🌍 Kyiv, Ukraine
+                </p>
+            </div>
+            <div style="flex: 1; min-width: 160px;">
+                <h4 style="margin-bottom: 15px; font-size: 16px;">HELP</h4>
+                <ul style="list-style: none; padding: 0; line-height: 2; font-size: 14px;">
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Contact us</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">FAQ</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Shipping & Returns</a></li>
+                </ul>
+            </div>
+            <div style="flex: 1; min-width: 160px;">
+                <h4 style="margin-bottom: 15px; font-size: 16px;">MY ACCOUNT</h4>
+                <ul style="list-style: none; padding: 0; line-height: 2; font-size: 14px;">
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Addresses</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Order Status</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Wishlist</a></li>
+                </ul>
+            </div>
+            <div style="flex: 1; min-width: 160px;">
+                <h4 style="margin-bottom: 15px; font-size: 16px;">CUSTOMER CARE</h4>
+                <ul style="list-style: none; padding: 0; line-height: 2; font-size: 14px;">
+                    <li><a href="#" style="color: #fff; text-decoration: none;">About us</a></li>
+                    <li><a href="#" style="color: #fff; text-decoration: none;">Blog</a></li>
+                </ul>
+            </div>
+            <div style="flex: 1; min-width: 280px; text-align: center;">
+                <h4 style="margin-bottom: 15px; font-size: 16px;">SIGN UP FOR EMAILS</h4>
+                <p style="font-size: 14px;">Stay informed. Subscribe to our newsletter.</p>
+                <input type="email" placeholder="Email" style="padding: 10px; width: 85%; border: none; border-radius: 5px; font-size: 14px;">
+                <button style="padding: 10px; background-color: #ff69b4; color: #fff; border: none; cursor: pointer; margin-top: 10px; border-radius: 5px; font-size: 14px;">Subscribe</button>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 50px; border-top: 1px solid #444; padding-top: 20px;">
+            <p style="font-size: 14px;">&copy; 2025 Eva cosmetics</p>
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 15px; font-size: 14px;">Privacy Policy</a> |
+            <a href="#" style="color: #fff; text-decoration: none; margin: 0 15px; font-size: 14px;">Terms And Conditions</a>
+        </div>
+    </footer>
+
+</body>
+</html>
